@@ -1,5 +1,5 @@
 const { spawn } = require('child_process');
-const python = spawn('python', ['path_to_your_python_script.py']);
+const python = spawn('python', ['app.py']);
 
 python.stdout.on('data', (data) => {
   console.log(`stdout: ${data}`);
